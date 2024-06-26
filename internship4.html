@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio -Ashwini</title>
+    <style>
+    
+body, h1, h2, h3, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+
+
+
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    background-image:url("b2.jpg");
+    background-size: cover;
+    color:white;
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav li {
+    margin: 0 1rem;
+}
+
+nav a {
+    color:white;
+    font-size: 30px;
+}
+
+.hero {
+    text-align: center;
+    padding: 3rem 1rem;
+    background-color: #f50b80;
+    background-image:url("b2.jpg");
+    background-size: cover;
+    color: white;
+}
+
+.hero img {
+    width: 150px;
+    border-radius: 48%;
+    margin-bottom: 1rem;
+}
+
+.hero button {
+    background-color: white;
+    color: #333;
+    border: none;
+    padding: 5px 10px;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.hero button:hover {
+    background-color: #ddd;
+}
+
+section {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.project {
+    margin-bottom: 2rem;
+}
+
+
+.info h2{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+nav ul li a :hover{
+   background-color: rgb(114, 105, 105);
+   transition:all 0.3s ease-in;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="hero">
+            <img src="my.jpeg" alt=Photo>
+            <h1>I'm , a Creative Web Developer</h1>
+            <p>I build modern, responsive websites and web applications.</p>
+            <button onclick="scrollToSection('about')">Know more</button>
+        </div>
+    </section>
+    <section class="info">
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Second year Engineering student,persuing B.tech degree in information technology </p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Personal portfolio website</h3>
+            <p>The website showcases your skills,projects and accomplishments as web developer</p>
+        </div>
+            <h3>Tic-Tac-Toe web application</h3>
+            <p>Created an interactive and engaging tic-tac-toe game</p>
+        
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Contact by E-mail</p>
+    </section>
+    </section>
+
+    <script>
+function scrollToSection(sectionId) {
+    document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+}
+    </script>
+</body>
+</html>
